@@ -27,4 +27,5 @@ Git is a powerful tool that constantly keeps track of every change we make to ou
 2. Stores different versions of any file.
 --- 
 ## What is a Repository?
-A repository is a place where all the versions of our files and their complete changes history are stored
+A repository is a place where all the versions of a project's files and their complete history of changes are stored.
+---
