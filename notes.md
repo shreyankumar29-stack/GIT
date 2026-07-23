@@ -1,10 +1,13 @@
 ## GIT n GITHUB
 
-## GIT: 
-GitHub is a cloud-based platform that hosts Git repositories. It allows developers to store, manage, share, and collaborate on code using Git.
-
-## Github:
+## GITHUB: 
+GitHub is a cloud-based platform that hosts Git repositories. It allows developers to store, manage, share, and collaborate on code using Git.(acts as Central Online Server)
+---
+## GIT:
 Git is a powerful tool that constantly keeps track of every change we make to our files.
+
+1. LOCAL(Own PC)-----> Git
+2. REMOTE(Cloud)-----> GitHub
 
 ## What GIT records?
 1. What Changed
@@ -12,3 +15,16 @@ Git is a powerful tool that constantly keeps track of every change we make to ou
 3. Who Changed
 4. Where Changed
 
+## Git's WorkFlow
+1. Working Directory
+2. Stages:My changes are ready and they can move to next step
+3. Local Repository
+4. Commit
+5. Push
+---  
+## Note 
+1. Any type of files can be committed to GIT
+2. Stores different versions of any file.
+--- 
+## What is a Repository?
+A repository is a place where all the versions of our files and their complete changes history are stored
