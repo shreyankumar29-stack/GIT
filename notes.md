@@ -38,6 +38,7 @@ A repository is a place where all the versions of a project's files and their co
 
 ## Note:
 (GIT)LOCAL--Store code to remote-->REMOTE(GITHUB)
+
 (GIT)LOCAL<--Pull Code to LOOCAL--REMOTE(GITHUB)
 
 ---
