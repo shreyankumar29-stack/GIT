@@ -274,4 +274,5 @@ When the branches are merged, Git cannot determine which value is correct. It pa
 |git reset HEAD~|Unstagged commit|
 |git rm filename|Deleting the file and automatically stagging that files|
 |git reset --hard|completely discard the changes|
-|
+|git rm -f filename|forcefullt deleted|
+|git rm --cached filename|removes the file from stagging area physicall in our working directory|
