@@ -493,6 +493,10 @@ Clean commit history
 ---
 
 ## Key Difference between git stash pop and git stash apply
+1. git stash pop removes our changes from the stash list
+2. git stash apply restore our changes but keep them in the stash list for future use.
+
+---
 
 ## Git Commands!!
 
