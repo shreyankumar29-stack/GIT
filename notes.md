@@ -47,3 +47,7 @@ A repository is a place where all the versions of a project's files and their co
 
 |Commands|Usage|
 |--------|-----|
+|Git --version|Checking the requiremnets|
+|
+|
+|
