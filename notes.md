@@ -488,6 +488,12 @@ Clean commit history
 
 ---
 
+## Note:rebase rewrites xommit history even the commit id's are change
+
+---
+
+## Key Difference between git stash pop and git stash apply
+
 ## Git Commands!!
 
 |Commands|Usage|
