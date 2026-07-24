@@ -60,3 +60,8 @@ A repository is a place where all the versions of a project's files and their co
 |cd .. | move back to the root directory|
 |git add --all|git takes every changes and take it to next commit|
 |git add -A|git takes every changes and take it to next commit|
+|git reset|back to old files|
+|git add .|Stage the changes within the current directory|
+|git add *| Stages all the changes except for the deleted file|
+|git add * .file_extension|all files with the same extension|
+|git commit -m "Commit Message"|Commit the changes|
