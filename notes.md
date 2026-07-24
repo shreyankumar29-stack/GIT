@@ -978,4 +978,4 @@ This prevents bugs from reaching the production code and ensures code quality.
 
 # Interview Definition
 
-> **A Pull Request (PR) is a GitHub feature that allows developers to propose changes from one branch to another for review, discussion, and approval before merging. It helps teams collaborate, maintain code quality, and prevent bugs from being introduced into the main branch.**
+> **A Pull Request (PR) is a GitHub feature that allows developers to propose changes from one branch to another for review, discussion, and approval before merging. It helps teams collaborate, maintain code quality, and prevent bugs from being introduced into the main branch.** 
