@@ -43,7 +43,7 @@ A repository is a place where all the versions of a project's files and their co
 
 ---
 
-## Git Commnads!!
+## Git Commands!!
 
 |Commands|Usage|
 |--------|-----|
@@ -56,3 +56,7 @@ A repository is a place where all the versions of a project's files and their co
 |ls -la|to show hidden files|
 |cd ../|Back to root folder|
 |clear|To clear the terminal|
+|git status|What changed|
+|cd .. | move back to the root directory|
+|git add --all|git takes every changes and take it to next commit|
+|git add -A||
