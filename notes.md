@@ -538,4 +538,3 @@ Clean commit history
 |git revert|used to do undo changes in the previous commit, but instead of deleting the old commit, it creates a new commit that reverse those changes|
 |git rebase|move or replay the commits of one branch onto another branch|
 |git stash apply stash@{1}|To restore a specific stash|
-|------------------------------------------------------|
