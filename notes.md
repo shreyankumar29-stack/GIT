@@ -548,3 +548,434 @@ Clean commit history
 |git revert|used to do undo changes in the previous commit, but instead of deleting the old commit, it creates a new commit that reverse those changes|
 |git rebase|move or replay the commits of one branch onto another branch|
 |git stash apply stash@{1}|To restore a specific stash|
+
+
+# Pull Requests (PR)
+
+## What is a Pull Request?
+
+A **Pull Request (PR)** is a GitHub feature that allows developers to propose changes made in one branch and request that those changes be reviewed and merged into another branch.
+
+A Pull Request is **not a Git command**. It is a **GitHub collaboration feature** used for code review, discussion, and merging changes.
+
+> **Definition:** A Pull Request is a request to merge changes from one branch into another after they have been reviewed and approved.
+
+---
+
+# Why Do We Use Pull Requests?
+
+Pull Requests are used to:
+
+- Review code before merging.
+- Discuss proposed changes with team members.
+- Detect bugs before merging.
+- Maintain code quality.
+- Track changes and discussions.
+- Enable collaboration among developers.
+- Prevent direct changes to important branches like `main`.
+
+---
+
+# Why are Pull Requests Important?
+
+Without Pull Requests:
+
+```
+Developer
+    │
+    ▼
+Push directly to main
+    │
+    ▼
+Code immediately becomes part of the project
+```
+
+If the code contains bugs, they immediately affect the project.
+
+---
+
+With Pull Requests:
+
+```
+Developer
+    │
+    ▼
+Feature Branch
+    │
+    ▼
+Create Pull Request
+    │
+    ▼
+Code Review
+    │
+    ▼
+Approval
+    │
+    ▼
+Merge into main
+```
+
+The code is reviewed before becoming part of the project.
+
+---
+
+# Basic Pull Request Workflow
+
+```
+Create Feature Branch
+        │
+        ▼
+Write Code
+        │
+        ▼
+Commit Changes
+        │
+        ▼
+Push Feature Branch
+        │
+        ▼
+Create Pull Request
+        │
+        ▼
+Code Review
+        │
+        ▼
+Resolve Comments (if needed)
+        │
+        ▼
+Merge Pull Request
+        │
+        ▼
+Delete Feature Branch
+```
+
+---
+
+# Step-by-Step Example
+
+## Step 1: Create a Branch
+
+```bash
+git switch -c feature/login
+```
+
+---
+
+## Step 2: Write Code
+
+Example:
+
+```
+login.html
+login.css
+login.js
+```
+
+---
+
+## Step 3: Commit Changes
+
+```bash
+git add .
+git commit -m "Add login page"
+```
+
+---
+
+## Step 4: Push Branch
+
+```bash
+git push origin feature/login
+```
+
+---
+
+## Step 5: Open GitHub
+
+GitHub automatically displays:
+
+```
+Compare & pull request
+```
+
+Click it.
+
+---
+
+## Step 6: Fill Pull Request Details
+
+### Title
+
+```
+Add Login Page
+```
+
+### Description
+
+```
+Added
+
+- Login UI
+- Form validation
+- Responsive design
+```
+
+---
+
+## Step 7: Create Pull Request
+
+Click
+
+```
+Create Pull Request
+```
+
+---
+
+## Step 8: Code Review
+
+Team members review your code.
+
+Possible actions:
+
+- Approve
+- Request Changes
+- Comment
+
+---
+
+## Step 9: Resolve Requested Changes
+
+Example:
+
+Reviewer says:
+
+> Rename variable "a" to "username"
+
+You update the code:
+
+```bash
+git add .
+git commit -m "Rename variable"
+git push
+```
+
+The Pull Request updates automatically.
+
+---
+
+## Step 10: Merge Pull Request
+
+Once approved:
+
+Click
+
+```
+Merge Pull Request
+```
+
+GitHub merges your branch into `main`.
+
+---
+
+# Types of Pull Request Reviews
+
+## 1. Approve
+
+The reviewer accepts the changes.
+
+```
+✓ Approved
+```
+
+---
+
+## 2. Comment
+
+Reviewer gives suggestions without blocking the merge.
+
+Example:
+
+> Please improve variable names.
+
+---
+
+## 3. Request Changes
+
+Reviewer asks for modifications before approval.
+
+Example:
+
+> Fix validation before merging.
+
+---
+
+# Common Merge Options
+
+## Merge Commit
+
+Creates a merge commit.
+
+```
+A──B──C────────M
+     \        /
+      D──E──F
+```
+
+History keeps both branches and a merge commit.
+
+---
+
+## Squash and Merge
+
+Combines all commits into one.
+
+Before:
+
+```
+Feature Branch
+
+Commit 1
+Commit 2
+Commit 3
+Commit 4
+```
+
+After:
+
+```
+One Commit
+```
+
+Useful for keeping history clean.
+
+---
+
+## Rebase and Merge
+
+Replays feature branch commits on top of the latest main branch.
+
+```
+A──B──C──D──E──F
+```
+
+No merge commit is created.
+
+---
+
+# Pull Request vs Merge Request
+
+GitHub:
+
+```
+Pull Request (PR)
+```
+
+GitLab:
+
+```
+Merge Request (MR)
+```
+
+They serve the same purpose.
+
+---
+
+# Benefits of Pull Requests
+
+- Better collaboration.
+- Code review before merging.
+- Fewer bugs.
+- Better documentation.
+- Easier discussion.
+- Cleaner Git history.
+- Maintains project quality.
+
+---
+
+# Best Practices
+
+- Create small Pull Requests.
+- Write meaningful titles.
+- Add a clear description.
+- Link related issues if applicable.
+- Resolve merge conflicts before requesting review.
+- Respond to review comments professionally.
+- Delete feature branches after merging.
+
+---
+
+# Real-World Example
+
+Suppose three developers are working on an E-commerce website.
+
+Developer A
+
+```
+Adds Login Feature
+```
+
+Developer B
+
+```
+Adds Shopping Cart
+```
+
+Developer C
+
+```
+Fixes Bugs
+```
+
+Each developer creates a separate branch.
+
+```
+main
+ │
+ ├── feature/login
+ ├── feature/cart
+ └── bugfix/payment
+```
+
+Instead of pushing directly to `main`, each developer creates a Pull Request.
+
+The team reviews each Pull Request before merging it into `main`.
+
+This prevents bugs from reaching the production code and ensures code quality.
+
+---
+
+# Pull Request Workflow Diagram
+
+```
+                 GitHub
+
+          main branch
+               ▲
+               │
+        Merge Pull Request
+               ▲
+               │
+      Code Review & Approval
+               ▲
+               │
+      Create Pull Request
+               ▲
+               │
+ git push origin feature/login
+               ▲
+               │
+      git commit -m "Add Login"
+               ▲
+               │
+          Write Code
+               ▲
+               │
+ git switch -c feature/login
+```
+
+---
+
+# Interview Definition
+
+> **A Pull Request (PR) is a GitHub feature that allows developers to propose changes from one branch to another for review, discussion, and approval before merging. It helps teams collaborate, maintain code quality, and prevent bugs from being introduced into the main branch.**
