@@ -52,5 +52,7 @@ A repository is a place where all the versions of a project's files and their co
 |mkdir folder_name|Creating folder in the designated directory|
 |touch filename|create files in the folder|
 |git init|Initialize git|
-|ls|To track files|
+|ls|lis of files|
 |ls -la|to show hidden files|
+|cd ../|Back to root folder|
+|clear|To clear the terminal|
