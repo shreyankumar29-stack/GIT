@@ -274,6 +274,8 @@ Fetching + merging remote changes, so our working directory immediately reflects
 
 ---
 
+## Stash List: 
+Newest at the top and oldest at bottom.
 
 ## Git Commands!!
 
@@ -317,6 +319,6 @@ Fetching + merging remote changes, so our working directory immediately reflects
 |git restore|revert any files or directory back to its previous state|
 |git restore .|undo all changes in the repository|
 |git restore --staged|staged some changes using git add .|
-|git stash|tmporarily set aside our unfinished work, switched to another branch to do make changes|
+|git stash|temporarily set aside our unfinished work, switched to another branch to do make changes|
 |git stash pop|The pop command restores the most recently stashed work and simultaneously remove it from the stashed list|
-
+|
