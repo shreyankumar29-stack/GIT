@@ -58,4 +58,5 @@ A repository is a place where all the versions of a project's files and their co
 |clear|To clear the terminal|
 |git status|What changed|
 |cd .. | move back to the root directory|
-|git add --all||git add -A|git takes every changes and take it to next commit|
+|git add --all|git takes every changes and take it to next commit|
+|git add -A|git takes every changes and take it to next commit|
