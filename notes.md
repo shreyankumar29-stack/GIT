@@ -248,6 +248,13 @@ When the branches are merged, Git cannot determine which value is correct. It pa
 
 > **A merge conflict occurs when Git cannot automatically merge changes from different branches because the same part of a project has been modified in incompatible ways. The developer must manually resolve the conflict before the merge can be completed.**
 
+---
+
+## NOTE:
+LOCAL MACHINE---PUSH-->REMOTE REPO
+LOCAL MACHINE<--FETCH--REMOTE REPO
+LOCAL MACHINE<--PULL-->REMOTE REPO
+__
 
 ## Git Commands!!
 
@@ -279,3 +286,8 @@ When the branches are merged, Git cannot determine which value is correct. It pa
 |git rm -r <FOLDER>|recursively delete the folder as well as contents|
 |git log|see the commit history|
 |git log --oneline|Commit history in simpler format|
+|git branch|which branch we're working|
+|git branch branch_name|new branch|
+|git checkout branch_name|change branch|
+|git merge -=main -m "message"|merge the branch|
+|git merge branch_name -m "message"|merging branch_name with 'main'|
