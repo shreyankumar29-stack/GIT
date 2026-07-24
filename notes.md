@@ -252,9 +252,28 @@ When the branches are merged, Git cannot determine which value is correct. It pa
 
 ## NOTE:
 LOCAL MACHINE---PUSH-->REMOTE REPO
+
 LOCAL MACHINE<--FETCH--REMOTE REPO
+
 LOCAL MACHINE<--PULL-->REMOTE REPO
-__
+
+---
+
+## PUSH:
+Sending local changes to remote
+
+---
+
+## FETCH:
+Bringing remote chnges into our local repository, but not merging them yet
+
+---
+
+## PULL:
+Fetching + merging remote changes, so our working directory immediately reflects the remote changes.
+
+---
+
 
 ## Git Commands!!
 
@@ -265,6 +284,7 @@ __
 |mkdir folder_name|Creating folder in the designated directory|
 |touch filename|create files in the folder|
 |git init|Initialize git|
+|git clone https://github.com/Username/repostory.git|clone a repo|
 |ls|lis of files|
 |ls -la|to show hidden files|
 |cd ../|Back to root folder|
@@ -291,3 +311,12 @@ __
 |git checkout branch_name|change branch|
 |git merge -=main -m "message"|merge the branch|
 |git merge branch_name -m "message"|merging branch_name with 'main'|
+|git push origin main|uploaded to github(cloud)|
+|git fetch|fetch code from remote|
+|git pull|push and pull commands together|
+|git restore|revert any files or directory back to its previous state|
+|git restore .|undo all changes in the repository|
+|git restore --staged|staged some changes using git add .|
+|git stash|tmporarily set aside our unfinished work, switched to another branch to do make changes|
+|git stash pop|The pop command restores the most recently stashed work and simultaneously remove it from the stashed list|
+
