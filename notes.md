@@ -1,7 +1,7 @@
 ## GIT n GITHUB
 
 ## GITHUB: 
-GitHub is a cloud-based platform that hosts Git repositories. It allows developers to store, manage, share, and collaborate on code using Git.(acts as Central Online Server)
+Github is a cloud-based platform that hosts Git repositories. It allows developers to store, manage, share, and collaborate on code using Git(acts as Central Online Server).
 ---
 
 ## GIT:
